@@ -1,0 +1,59 @@
+*
+  margin: 0
+  padding: 0
+
+.calculator
+  display: flex
+  flex-direction: column
+  width: 10%
+  margin: 2rem auto
+  border: 1px solid rgba(0, 0, 0, 0.5)
+
+.button,
+.calculator__clear,
+.calculator__display
+  background-color: white
+  border: 0.01rem solid rgba(0, 0, 0, 0.1)
+  padding: 0.5rem
+  font-weight: 100
+  font-family: "Loma"
+  color: black
+
+.calculator__display
+  text-align: right
+  background-color: burlywood
+
+.button
+  width: 2rem
+  padding: 0.5rem
+
+.calculator__numpad
+  display: grid
+  grid-template-areas: "clear clear" "nums operands"
+  width: 8rem
+
+.calculator__clear
+  grid-area: clear
+
+.calculator__numbers,
+.calculator__operands
+  display: flex
+
+.calculator__numbers .button:last-child
+  flex: 1
+
+.calculator__numbers
+  grid-area: nums
+  flex-wrap: wrap
+
+.calculator__operations
+  grid-area: operands
+  width: 2rem
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+input[type=number]
+  -moz-appearance: textfield
