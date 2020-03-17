@@ -4,15 +4,15 @@ export default function calculateExp(n1, n2, operand) {
       return Number(n1) + Number(n2);
 
     case "-":
-      return Number(n1) + Number(n2);
+      return Number(n1) - Number(n2);
 
     case "*":
-      return Number(n1) + Number(n2);
+      return Number(n1) * Number(n2);
 
     case "/":
-      return Number(n1) + Number(n2);
+      return Number(n1) / Number(n2);
 
     case "^":
-      return Number(n1) + Number(n2);
+      return Number(n1) ** Number(n2);
   }
 }
